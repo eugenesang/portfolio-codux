@@ -18,11 +18,11 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-24T13:12:32.430Z"
+    "x-generation-date": "2023-12-25T08:27:34.350Z"
   },
   "servers": [
     {
-      "url": "http://localhost:5000/api",
+      "url": "http://localhost:1337/api",
       "description": "Development server"
     }
   ],
@@ -121,7 +121,7 @@
               "email": {
                 "type": "string"
               },
-              "phone": {
+              "GitHub": {
                 "type": "string"
               }
             }
@@ -817,7 +817,7 @@
           "email": {
             "type": "string"
           },
-          "phone": {
+          "GitHub": {
             "type": "string"
           },
           "createdAt": {

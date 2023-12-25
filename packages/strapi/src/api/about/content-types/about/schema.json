@@ -45,9 +45,8 @@
       "type": "string",
       "regex": "[^@ \\t\\r\\n]+@[^@ \\t\\r\\n]+\\.[^@ \\t\\r\\n]+"
     },
-    "phone": {
-      "type": "string",
-      "regex": "[\\d|+|-]+"
+    "GitHub": {
+      "type": "string"
     }
   }
 }
