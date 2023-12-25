@@ -1,0 +1,46 @@
+{
+  "name": "my-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prettify": "prettier . --write",
+    "verify": "yarn run lint && yarn workspaces run tsc",
+    "build": "npm run lint && yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "start:client:dev": "yarn workspace @portfolio/client run dev",
+    "start:server:dev": "yarn workspace @portfolio/strapi run develop"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@faker-js/faker": "^8.3.1",
+    "@testing-library/react": "^14.1.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vitejs/plugin-react": "^4.1.1",
+    "@wixc3/react-board": "^2.3.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^22.1.0",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "typescript": "~5.2.2",
+    "vite": "^4.5.0",
+    "vitest": "^0.34.6"
+  }
+}

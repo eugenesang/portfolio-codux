@@ -1,0 +1,39 @@
+{
+  "name": "@portfolio/strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "tsc": "echo 'not a Typescript module'",
+    "test": "echo 'no tests in this module'"
+  },
+  "exports": "./types/generated/contentTypes.d.ts",
+  "types": "types/generated/contentTypes.d.ts",
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.15.5",
+    "@strapi/plugin-documentation": "^4.15.4",
+    "@strapi/plugin-i18n": "4.15.5",
+    "@strapi/plugin-users-permissions": "4.15.5",
+    "@strapi/strapi": "4.15.5",
+    "better-sqlite3": "^9.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "6e9a9907-87ec-4f09-8b41-edbb1d4b3c48"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
