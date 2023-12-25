@@ -25,13 +25,11 @@ export const HomePage = () => {
     return (
         <div className={cx(styles.root, 'page')}>
             <div className={cx(styles.rectangle, styles.textWrapper)}>
-                <h3 className={styles.text}>Dreams coded real</h3>
+                <h3 className={styles.text}>Eugene Sang: Dreams coded real</h3>
             </div>
-            <div className={styles.logoWrapper}>
-                <h1 className={styles.logo}>EUGENE </h1>
-            </div>
+            <div className={cx(styles.rectangle, styles.img)}></div>
+            <div className={styles.logoWrapper}></div>
             <div className={styles.marquee}>
-                <div className={cx(styles.rectangle, styles.img)}></div>
                 <motion.div className={styles.marqueeContent} variants={marqueeVariants} animate="animate">
                     {Array(2).fill('WorkHub Writers • Stockisha • Harambee Manager • Top Essay Inc • Trusted Advisers Realty • ')}
                 </motion.div>
