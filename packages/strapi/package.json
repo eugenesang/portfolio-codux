@@ -14,7 +14,7 @@
   "exports": "./types/generated/contentTypes.d.ts",
   "types": "types/generated/contentTypes.d.ts",
   "dependencies": {
-    "@strapi/plugin-cloud": "4.15.5",
+    "@strapi/plugin-cloud": "4.16.2",
     "@strapi/plugin-documentation": "^4.15.4",
     "@strapi/plugin-i18n": "4.15.5",
     "@strapi/plugin-users-permissions": "4.15.5",
