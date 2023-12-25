@@ -11,11 +11,11 @@ import { motion } from 'framer-motion';
 export const HomePage = () => {
     const marqueeVariants = {
         animate: {
-            x: [0, -1000],
+            x: [0, -3000],
             transition: {
                 x: {
                     repeat: Infinity,
-                    duration: 8,
+                    duration: 15,
                     ease: 'linear',
                 },
             },
@@ -25,15 +25,15 @@ export const HomePage = () => {
     return (
         <div className={cx(styles.root, 'page')}>
             <div className={cx(styles.rectangle, styles.textWrapper)}>
-                <h3 className={styles.text}>Sophistication in Design, Excellence in Execution</h3>
+                <h3 className={styles.text}>Dreams coded real</h3>
             </div>
-            <div className={cx(styles.rectangle, styles.img)}></div>
             <div className={styles.logoWrapper}>
-                <h1 className={styles.logo}>KOLINJ</h1>
+                <h1 className={styles.logo}>EUGENE </h1>
             </div>
             <div className={styles.marquee}>
+                <div className={cx(styles.rectangle, styles.img)}></div>
                 <motion.div className={styles.marqueeContent} variants={marqueeVariants} animate="animate">
-                    {Array(2).fill('Desert Oasis • Urban Charm • Palm Elegance • Ranch Comfort • Beachside Dining • ')}
+                    {Array(2).fill('WorkHub Writers • Stockisha • Harambee Manager • Top Essay Inc • Trusted Advisers Realty • ')}
                 </motion.div>
             </div>
             <ProjectsGallery className={styles.gallery} headerHeight={theme.headerHeight} />
